@@ -95,7 +95,7 @@
                         <configuration>
                             <skip>false</skip>
                             <excludes>
-                                <exclude>com/ubs/test/integration/**</exclude>
+                                <exclude>com/loudsight/vwap/test/integration/**</exclude>
                             </excludes>
                         </configuration>
                     </execution>
@@ -109,7 +109,7 @@
                         <configuration>
                             <skip>false</skip>
                             <includes>
-                                <include>com/ubs/test/integration/**</include>
+                                <include>com/loudsight/vwap/test/integration/**</include>
                             </includes>
                         </configuration>
                     </execution>
