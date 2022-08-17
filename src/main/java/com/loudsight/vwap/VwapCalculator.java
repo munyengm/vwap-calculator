@@ -25,6 +25,8 @@ public class VwapCalculator implements Calculator {
     private final Map<Instrument, VwapPrice> priceMap = new HashMap<>();
 
     public VwapCalculator() {
+        // Assumption is that an instance of this class is created once in a single thread.
+        // Initialise all the instruments to avoid allocations during updates.
         Stream.of(Instrument.values()).forEach(instrument -> priceMap.put(instrument, new VwapPrice(instrument)));
     }
 
